@@ -1,7 +1,7 @@
 import { Field } from './field.js'
 import { Button } from './button.js'
 
-export const Form = ({ children, username, message, sendComment, changeField }) => {
+export const FormView = ({ children, username, message, sendComment, changeField }) => {
   return React.createElement(
     'form',
     {
@@ -44,3 +44,5 @@ export const Form = ({ children, username, message, sendComment, changeField }) 
     )
   )
 }
+
+export const Form = React.memo(FormView)

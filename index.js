@@ -1,6 +1,6 @@
 import { Main } from './components/main.js'
 
 ReactDOM.render(
-  React.createElement(Main, null, null),
+  React.createElement(Main),
   document.getElementById('root')
 );

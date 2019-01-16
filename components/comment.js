@@ -1,6 +1,6 @@
 import { timeSlice } from '../lib/date.js'
 
-export const Comment = ({ id, username, message, timestamp, removeComment }) => React.createElement(
+export const CommentView = ({ id, username, message, timestamp, removeComment }) => React.createElement(
   'section', 
   { 
     className: 'comment'
@@ -40,3 +40,5 @@ export const Comment = ({ id, username, message, timestamp, removeComment }) => 
     ),
   ),
 )
+
+export const Comment = React.memo(CommentView)
