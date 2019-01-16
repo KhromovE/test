@@ -1,0 +1,7 @@
+.field {
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--light-gray);
+  margin-bottom: 0.7rem;
+}
