@@ -1,4 +1,6 @@
+import { Main } from './components/main.js'
+
 ReactDOM.render(
-  React.createElement('div', null, null),
+  React.createElement(Main, null, null),
   document.getElementById('root')
 );
