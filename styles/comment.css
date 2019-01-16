@@ -1,0 +1,28 @@
+.comment {
+  position: relative;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.comment-cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.comment-cross:before {
+  content: "\2715";
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+
+.comment .comment-username {
+  color: var(--dark-gray);
+}
+
+.comment .comment-date {
+  text-align: right;
+  color: var(--dark-gray);
+}

@@ -1,4 +1,5 @@
 import { Form } from './form.js'
+import { Comments } from './comments.js'
 import { generateId } from '../lib/utils.js'
 import { timestamp } from '../lib/date.js'
 import { getComments, saveComments } from '../lib/store.js'
@@ -73,6 +74,7 @@ export class Main extends React.PureComponent {
       'main', 
       { className: 'main' },
       React.createElement(Form, { username, message, sendComment, changeField }),
+      React.createElement(Comments, { comments, removeComment }),
     )
   }
 }
